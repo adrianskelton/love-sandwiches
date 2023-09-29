@@ -96,10 +96,16 @@ def get_last_5_entries_sales():
     # print(column)
 
     columns = []
-    for ind in range(1,7):
+    for ind in range(1, 7):
         column = sales.col_values(ind)
         columns.append(column[-5:])
-        pprint(columns)
+    pprint(columns)
+
+def calculate_stock_data(data):
+    """
+    Calculate the average stock for each item type, adding 10%
+    """
+    print("Calculating stock data...\n")
 
 def main():
     """
